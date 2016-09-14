@@ -2,7 +2,8 @@ angular.module('wp', [
     'ui.router',
     'app.write',
     'app.read',
-    'app.menu'
+    'app.menu',
+    'app.directives'
   ])
 
 .config(function($stateProvider, $urlRouterProvider) { 
