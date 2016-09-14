@@ -1,0 +1,6 @@
+<div ui-view="menu"></div>
+<div class="row">  
+  <div> 
+    <div class="u-full-width posts" style="margin-top: 20px" ng-repeat="post in posts | orderBy:'-created_at'">{{post.share}}</div>
+  </div>
+</div>

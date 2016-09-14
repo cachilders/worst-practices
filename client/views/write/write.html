@@ -1,0 +1,26 @@
+<div ui-view="menu"></div>
+<div class="row">
+  <div> 
+    <form id="transform" style="text-align: justify">
+      <!--Hide editArea on apply / show on revert-->
+      <textarea id="input" class="u-full-width" rows="12" data-ng-model="editArea" placeholder="words go here" data-ng-hide="appView === 'resultView'"></textarea>
+      <textarea id="output" class="u-full-width" rows="12" data-ng-bind="printArea" data-ng-readonly="true" data-ng-hide="appView !== 'resultView'"></textarea>
+      <!--Another ugly temp solution-->
+        <label style="float: left"><input type="checkbox" data-ng-model="trans1"> ALL CAPS&nbsp;&nbsp;</label> 
+        <label style="float: left"><input type="checkbox" data-ng-model="trans2"> Runons&nbsp;&nbsp;</label> 
+        <label style="float: left"><input type="checkbox" data-ng-model="trans3"> Hyperbole&nbsp;&nbsp;</label> 
+        <label style="float: left"><input type="checkbox" data-ng-model="trans4"> Double Spacing&nbsp;&nbsp;</label>
+        <label style="float: left"><input type="checkbox" data-ng-model="trans5"> Trailing Sentences&nbsp;&nbsp;</label>
+        <label style="float: left"><input type="checkbox" data-ng-model="trans6"> Chill Greets&nbsp;&nbsp;</label> 
+        <label style="float: left"><input type="checkbox" data-ng-model="trans7"> Emoji++&nbsp;&nbsp;</label> 
+        <label style="float: left"><input type="checkbox" data-ng-model="trans8"> ¯\_(ツ)_/¯&nbsp;&nbsp;</label>
+        <label style="float: left"><input type="checkbox" data-ng-model="trans9"> Autocorrect</label>
+        <!--Show during edit mode / hide on apply-->
+        <input type="button" class="button-primary" value="Apply Filters" id="apply" style="float: right" data-ng-click="viewToggle()" data-ng-hide="appView === 'resultView'">
+        <!--Show on apply / hide on revert-->
+        <input type="button" class="button-clicked" value="Revert" id="revert" style="float: right; margin-right: 10px" data-ng-click="viewToggle()" data-ng-hide="appView !== 'resultView'">
+        <!--reset editArea on share-->
+        <input type="button" class="button-primary" value="Share" id="share" style="float: right; margin-right: 10px" data-ng-click="shareMissive(printArea)" data-ng-hide="appView !== 'resultView'">
+    </form>
+  </div>
+</div>

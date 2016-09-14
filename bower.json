@@ -1,0 +1,24 @@
+{
+  "name": "worstPractices",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "cachilders"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/cachilders/worstPractices",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "ui-router#^0.3.1",
+    "angular": "^1.5.8",
+    "jquery": "^3.1.0",
+    "skeleton": "^2.0.4"
+  }
+}
