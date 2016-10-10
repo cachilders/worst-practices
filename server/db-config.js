@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
 var path = require('path');
 var request = require('request');
+var Missive = require('./db-schemas/missive')
 
 mongoURI = process.env.MONGODB_URI || 'mongodb://localhost/worst'
 mongoose.connect(mongoURI);
