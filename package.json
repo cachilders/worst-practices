@@ -23,8 +23,9 @@
     "nodemon": "^1.10.2",
     "passport": "^0.3.2",
     "passport-auth0": "^0.5.2",
-    "synaptic": "^1.0.8",
     "request": "^2.74.0",
+    "serve-favicon": "^2.3.0",
+    "synaptic": "^1.0.8",
     "ui-router": "^1.0.0-alpha.3"
   }
 }

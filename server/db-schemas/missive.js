@@ -7,4 +7,4 @@ const missiveSchema = new mongoose.Schema({
   { timestamps: { createdAt: 'created_at' } }
 )
 
-module.exports = mongoose.model('Missive', missiveSchema);
+const Missive = module.exports = mongoose.model('Missive', missiveSchema);

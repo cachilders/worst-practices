@@ -1,5 +1,7 @@
-require('dotenv').config();
+                      require('dotenv').config();
 const express       = require('express');
+const favicon       = require('serve-favicon');
+const path          = require('path');
 const partials      = require('express-partials');
 const session       = require('express-session');
 const bodyParser    = require('body-parser');
@@ -9,7 +11,6 @@ const cookieParser  = require('cookie-parser');
 const strategy      = require('./server/setup-passport');
 const synaptic      = require('./server/setup-synaptic.js') // github.com/cazala/synaptic
 const db            = require('./server/db-config');
-const missiveSchema  = require('./server/db-schemas/missive.js');
 
 const app = express();
 
@@ -18,11 +19,14 @@ const port = process.env.PORT||3000;
 app.listen(port);
 
 app.use(express.static(__dirname + "/client"));
+app.use(favicon(path.join(__dirname,'client','images','favicon.ico')));
+
+app.use(bodyParser.json());
 
 app.use(cookieParser());
 app.use(session({ secret: process.env.AUTH0_CLIENT_SECRET, resave: false,  saveUninitialized: false }));
 
-app.get('/', (req, res) => res.redirect('/index.html'))  // Ultimately needs to be /public
+app.get('/', (req, res) => res.redirect('/index.html'))
 app.get('/posts', db.retrievePosts);
 app.post('/save', db.savePost);
 
@@ -43,7 +47,7 @@ app.get('/user', function (req, res) {
 
 console.log('Server now listening on port ' + port);
 
-app.use(passport.initialize()); // Uncomment for authentication services
+app.use(passport.initialize());
 app.use(passport.session());
 
 module.exports = app;
