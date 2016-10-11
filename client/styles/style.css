@@ -1,6 +1,9 @@
-.body {
-    background-color: #F3DFC1;
-}
+.bg {
+    background-color: #F3DFC1; }
+
+.title {
+    font-family: 'Pacifico', cursive;
+    text-align: center; }
 
 .active { 
     color: #246A73; font-weight: bolder; }
@@ -26,9 +29,10 @@ li a {
     text-decoration: none; }
 
 .posts {
-    font-size: 130%;
-}
+    font-size: 130%; }
+
+.buttons {
+    padding: 0 1rem 0 1rem; }
 
 tr:nth-child(even) {
-    background-color: #ccc;
-}
+    background-color: #ccc; }
