@@ -205,9 +205,9 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
-  background-color: #368F8B;
-  border-color: #368F8B; }
+  color: #494331;
+  background-color: #FBFFB9;
+  border-color: #813405; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -226,9 +226,9 @@ button.button-clicked,
 input[type="submit"].button-clicked,
 input[type="reset"].button-clicked,
 input[type="button"].button-clicked {
-  color: #FFF;
-  background-color: #DDBEA8;
-  border-color: #DDBEA8; }
+  color: #FBFFB9;
+  background-color: #494331;
+  border-color: #813405; }
 .button.button-clicked:hover,
 button.button-clicked:hover,
 input[type="submit"].button-clicked:hover,

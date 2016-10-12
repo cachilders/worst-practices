@@ -1,9 +1,21 @@
+body {
+    color: #494331;
+    font-family: 'Source Serif Pro', serif; }
+
 .bg {
-    background-color: #F3DFC1; }
+    background-color: #FF784F; }
 
 .title {
-    font-family: 'Pacifico', cursive;
-    text-align: center; }
+    font-family: 'Pacifico', serif;
+    text-align: center;
+    color: #494331 }
+
+.header {
+    font-family: 'Pacifico', serif;
+    color: #FBFFB9 }
+
+.header:hover {
+    color: #F2EFEA }
 
 .active { 
     color: #246A73; font-weight: bolder; }
@@ -17,8 +29,7 @@
     list-style: none;
     margin: 0;
     padding-top: 0;
-    overflow: hidden;
-    background-color: #F3DFC1; }
+    overflow: hidden; }
 
 .nav li {
     padding: 20px 30px 10px 30px; }
@@ -28,11 +39,19 @@ li a {
     color: #368F8B;
     text-decoration: none; }
 
+.field {
+    font-family: 'Source Serif Pro', serif;
+    background-color: #F2EFEA;
+    border-radius: 1rem; }
+
 .posts {
     font-size: 130%; }
 
 .buttons {
+    clear: both;
     padding: 0 1rem 0 1rem; }
 
-tr:nth-child(even) {
-    background-color: #ccc; }
+.line {
+    background-color: #813405;
+    border: none;
+    height: 1px; }
