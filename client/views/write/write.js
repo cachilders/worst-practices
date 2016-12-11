@@ -76,8 +76,19 @@ angular.module('app.write', [])
       });
       editorInput = temp.join(' ');
     }
+    $scope.printArea = editorInput;
     if ($scope.trans1 === true) {
       editorInput = editorInput.toUpperCase();
+    } 
+    if ($scope.trans10 === true) {
+      const hacks = {a: 'α', b: 'ь', c: 'ҁ', d: 'ƌ', e: 'ε', f: 'ƒ', g: 'ǥ', h: 'һ', i: 'í', j: 'ȷ', k: 'ӄ', l: 'Ŀ', m: 'м', n: 'ƞ', o: 'ο', p: 'Ϸ', q: 'Ϥ', r: 'ɼ', s: 'ϩ', t: 'Ƭ', u: 'ȗ', v: 'ν', w: 'ᾡ', x: 'ӽ', y: 'ү', z: 'ɀ'}
+      editorInput = editorInput.toLowerCase()
+        .split('')
+        .map(function(char) {
+          console.log(char)
+          return hacks[char] ? hacks[char] : char;
+        })
+        .join('');
     } 
     $scope.printArea = editorInput;
   };
