@@ -1,24 +1,24 @@
 body {
-    color: #494331;
-    font-family: 'Source Serif Pro', serif; }
+    color: #666666;
+    font-family: 'Play', serif; }
 
 .bg {
-    background-color: #FF784F; }
+    background-color: #CCCCCC; }
 
 .title {
-    font-family: 'Pacifico', serif;
+    font-family: 'Press Start 2P', serif;
     text-align: center;
-    color: #494331 }
+    color: #111111 }
 
 .header {
-    font-family: 'Pacifico', serif;
-    color: #FBFFB9 }
+    font-family: 'Press Start 2P', serif;
+    color: #555555 }
 
 .header:hover {
-    color: #F2EFEA }
+    color: #777777 }
 
 .active { 
-    color: #246A73; font-weight: bolder; }
+    color: #999999; font-weight: bolder; }
 
 .nav {
     text-align: center;
@@ -34,20 +34,24 @@ body {
 .nav li {
     padding: 20px 30px 10px 30px; }
 
+li {
+    color: #222222; }
+
 li a {
     display: block;
-    color: #368F8B;
+    color: #666666;
     text-decoration: none; }
 
 .field {
-    font-family: 'Source Serif Pro', serif;
-    background-color: #F2EFEA;
-    border-radius: 1rem; }
+    font-family: 'Play', serif;
+    background-color: #EEEEEE;
+    border-radius: 0rem; }
 
 .posts {
     font-size: 130%; }
 
 .buttons {
+    font-family: 'Press Start 2P', serif;
     clear: both;
     padding: 0 1rem 0 1rem; }
 
@@ -55,6 +59,6 @@ li a {
     padding: 0 1rem 0 1rem; }
 
 .line {
-    background-color: #813405;
+    background-color: #DDDDDD;
     border: none;
     height: 1px; }
