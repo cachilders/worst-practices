@@ -62,10 +62,6 @@ angular.module('app.write', [])
       const chill = ['Yo!', 'Sup!', 'My Man!', 'Hola.', 'Hey!', 'What\s good!?']
       editorInput = '' + chill[Math.floor(Math.random() * (6 - 1) + 1)] + ' ' + editorInput;
     }
-    if ($scope.trans8 === true) {
-      const shrg = ['¯\_(ツ)_/¯', '(ಠ_ಠ)', 'ᕕ( ᐛ )ᕗ', '(╯°□°）╯︵ ┻━┻', 'ʕ •ᴥ•ʔ', '/ᐠ-ꞈ-ᐟ\\']
-      editorInput = editorInput + ' ' + shrg[Math.floor(Math.random() * (6 - 1) + 1)];
-    }
     if ($scope.trans9 === true) {
       const temp = editorInput.split(' ');
       temp.forEach((v, i) => {
@@ -91,6 +87,10 @@ angular.module('app.write', [])
     }
     if ($scope.trans11 === true) {
       editorInput = [''].concat(editorInput.split(' '), ['']).join('👏');
+    }
+    if ($scope.trans8 === true) {
+      const shrg = ['¯\_(ツ)_/¯', '(ಠ_ಠ)', 'ᕕ( ᐛ )ᕗ', '(╯°□°）╯︵ ┻━┻', 'ʕ •ᴥ•ʔ', '/ᐠ-ꞈ-ᐟ\\']
+      editorInput = editorInput + ' ' + shrg[Math.floor(Math.random() * (6 - 1) + 1)];
     }
     $scope.printArea = editorInput;
   };
