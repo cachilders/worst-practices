@@ -3,8 +3,8 @@
   <div> 
     <form id="transform" style="text-align: justify">
       <!--Hide editArea on apply / show on revert-->
-      <textarea id="input" class="u-full-width field" rows="12" data-ng-model="editArea" placeholder="words go here" data-ng-hide="appView === 'resultView'"></textarea>
-      <textarea id="output" class="u-full-width field" rows="12" data-ng-bind="printArea" data-ng-readonly="true" data-ng-hide="appView !== 'resultView'"></textarea>
+      <textarea id="input" class="u-full-width field" rows="6" data-ng-model="editArea" placeholder="words go here" data-ng-hide="appView === 'resultView'"></textarea>
+      <textarea id="output" class="u-full-width field" rows="6" data-ng-bind="printArea" data-ng-readonly="true" data-ng-hide="appView !== 'resultView'"></textarea>
       <!--Another ugly temp solution-->
       <div class="filters">
         <label style="float: left"><input type="checkbox" data-ng-model="trans1"> ALL CAPS&nbsp;&nbsp;</label> 
