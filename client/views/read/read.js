@@ -9,7 +9,10 @@ angular.module('app.read', [])
     }).then(function(resp) {
       return resp.data;
     }).then(function(missives){
-      $scope.posts = missives;
+      console.log(missives)
+      $scope.posts = missives.filter(function(missive) {
+        return missive.share;
+      });
     }).catch()
   }
   getPosts();
