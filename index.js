@@ -9,8 +9,8 @@ const fs            = require('fs');
 const passport      = require('passport');
 const cookieParser  = require('cookie-parser');
 const strategy      = require('./server/setup-passport');
-const synaptic      = require('./server/setup-synaptic.js') // github.com/cazala/synaptic
 const db            = require('./server/db-config');
+const emoji         = require("emojilib");
 
 const app = express();
 
@@ -27,6 +27,7 @@ app.use(cookieParser());
 app.use(session({ secret: process.env.AUTH0_CLIENT_SECRET, resave: false,  saveUninitialized: false }));
 
 app.get('/', (req, res) => res.redirect('/index.html'))
+app.get('/emoji', (req, res) => res.send(emoji));
 app.get('/posts', db.retrievePosts);
 app.post('/save', db.savePost);
 
