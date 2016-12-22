@@ -26,7 +26,7 @@
         <!--Show on apply / hide on revert-->
         <input type="button" class="button-primary" value="Revert" id="revert" style="float: right; margin-right: 10px" data-ng-click="viewToggle()" data-ng-hide="appView !== 'resultView'">
         <!--reset editArea on share-->
-        <input type="button" class="button-primary" value="Share" id="share" style="float: right; margin-right: 10px" data-ng-click="shareMissive(printArea)" data-ng-hide="appView !== 'resultView'">
+        <input type="button" class="button-primary" ngclipboard data-clipboard-target="#output" value="Copy to Clipboard" id="share" style="float: right; margin-right: 10px" data-ng-hide="appView !== 'resultView'">
       </div>
     </form>
   </div>

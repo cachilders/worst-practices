@@ -1,4 +1,4 @@
-angular.module('app.write', [])
+angular.module('app.write', ['ngclipboard'])
 
 .controller('Write', ['$scope', '$http', '$location', function($scope, $http, $location) {
 
