@@ -65,8 +65,10 @@ angular.module('app.write', [])
     if ($scope.trans7 === true) {
       const temp = editorInput.split(' ');
       temp.forEach((v, i) => {
-        if (emoji[v.toLowerCase()] && emoji[v.toLowerCase()].category !== 'flags') {
-          temp[i] = emoji[v].char;
+        if (emoji[v.toLowerCase()]) {
+          if (emoji[v.toLowerCase()].category !== 'flags' && v !== 'a') {
+            temp[i] = emoji[v].char;
+          };
         }
       });
       editorInput = temp.join(' ');
