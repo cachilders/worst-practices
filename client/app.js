@@ -1,7 +1,6 @@
 angular.module('wp', [
     'ui.router',
     'app.write',
-    'app.read',
     'app.menu',
     'app.directives'
   ])
